@@ -1,0 +1,9 @@
+<h2> <center>Edit Profile</center> </h2>
+<br><br><br>
+<form action=<%="/update_profile/#{@profile.id}" %>>
+  <input type="text" name="name"  value=<%= "#{@profile.name}" %>>
+  <input type="text" name="url" value=<%= "#{@profile.url}" %>>
+  <input type="text" name="caption" value=<%= "#{@profile.caption}" %>>
+  <input type="text" name="image" value=<%= "#{@profile.image}" %>>
+  <input type="submit">
+</form>

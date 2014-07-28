@@ -1,0 +1,2530 @@
+
+
+Started GET "/" for 129.105.10.175 at 2014-07-28 15:31:20 +0000
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.1.0) lib/active_record/migration.rb:389:in `check_pending!'
+  activerecord (4.1.0) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (35.1ms)
+  [1m[36m (43.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (15.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateLinks (20140725141357)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "links" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "url" varchar(255), "name" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140725141357"]]
+  [1m[35m (17.4ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 129.105.10.175 at 2014-07-28 15:32:31 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/action/.gem/ruby/2.1.1/gems/railties-4.1.0/lib/rails/templates/rails/welcome/index.html.erb (2.8ms)
+Completed 200 OK in 73ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 129.105.10.175 at 2014-07-28 15:34:03 +0000
+Processing by ApplicationController#new as HTML
+  Rendered application/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 927ms (Views: 926.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 15:34:04 +0000
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 15:34:04 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 129.105.10.175 at 2014-07-28 15:34:04 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 129.105.10.175 at 2014-07-28 15:34:04 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 15:34:04 +0000
+
+
+Started GET "/" for 129.105.10.175 at 2014-07-28 16:15:55 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#new as HTML
+  Rendered application/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 57ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 16:15:55 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 16:15:55 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 16:15:55 +0000
+
+
+Started GET "/create_link?name=google&url=www.google.com" for 129.105.10.175 at 2014-07-28 16:16:18 +0000
+Processing by ApplicationController#create as HTML
+  Parameters: {"name"=>"google", "url"=>"www.google.com"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "links" ("created_at", "name", "updated_at", "url") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-07-28 16:16:18.823413"], ["name", "google"], ["updated_at", "2014-07-28 16:16:18.823413"], ["url", "www.google.com"]]
+  [1m[35m (39.1ms)[0m  commit transaction
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/link/1
+Completed 302 Found in 57ms (ActiveRecord: 40.9ms)
+
+
+Started GET "/link/1" for 129.105.10.175 at 2014-07-28 16:16:18 +0000
+Processing by ApplicationController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLink Load (0.3ms)[0m  [1mSELECT  "links".* FROM "links"  WHERE "links"."id" = 1 LIMIT 1[0m
+  Rendered application/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 15ms (Views: 5.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 16:16:19 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 16:16:19 +0000
+
+
+Started GET "/link/www.google.com" for 129.105.10.175 at 2014-07-28 16:16:21 +0000
+
+ActionController::RoutingError (No route matches [GET] "/link/www.google.com"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (9.8ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.2ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (45.5ms)
+
+
+Started GET "/links" for 129.105.10.175 at 2014-07-28 16:16:28 +0000
+Processing by ApplicationController#index as HTML
+  [1m[35mLink Load (0.3ms)[0m  SELECT "links".* FROM "links"
+  Rendered application/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 129.105.10.175 at 2014-07-28 16:26:30 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#new as HTML
+  Rendered application/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 234ms (Views: 209.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 16:26:31 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 16:26:31 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 16:26:31 +0000
+
+
+Started GET "/create_link?name=arda&url=www.google.com" for 129.105.10.175 at 2014-07-28 16:26:49 +0000
+Processing by ApplicationController#create as HTML
+  Parameters: {"name"=>"arda", "url"=>"www.google.com"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (22.7ms)[0m  [1mINSERT INTO "links" ("created_at", "name", "updated_at", "url") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-07-28 16:26:49.179574"], ["name", "arda"], ["updated_at", "2014-07-28 16:26:49.179574"], ["url", "www.google.com"]]
+  [1m[35m (46.2ms)[0m  commit transaction
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/link/2
+Completed 302 Found in 102ms (ActiveRecord: 69.5ms)
+
+
+Started GET "/link/2" for 129.105.10.175 at 2014-07-28 16:26:49 +0000
+Processing by ApplicationController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLink Load (1.2ms)[0m  [1mSELECT  "links".* FROM "links"  WHERE "links"."id" = 2 LIMIT 1[0m
+  Rendered application/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 47ms (Views: 16.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 16:26:49 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 16:26:49 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 16:26:49 +0000
+
+
+Started GET "/links" for 129.105.10.175 at 2014-07-28 16:26:51 +0000
+Processing by ApplicationController#index as HTML
+  [1m[35mLink Load (0.3ms)[0m  SELECT "links".* FROM "links"
+  Rendered application/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateAccounts (20140728162914)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "accounts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "url" varchar(255), "caption" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140728162914"]]
+  [1m[36m (52.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 129.105.10.175 at 2014-07-28 16:36:31 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#new as HTML
+  Rendered application/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 245ms (Views: 222.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 16:36:31 +0000
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 16:36:31 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 16:36:31 +0000
+
+
+Started GET "/" for 129.105.10.175 at 2014-07-28 16:37:02 +0000
+Processing by ApplicationController#new as HTML
+  Rendered application/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 129.105.10.175 at 2014-07-28 16:37:03 +0000
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 16:37:03 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 16:37:03 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 129.105.10.175 at 2014-07-28 16:37:03 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 16:37:03 +0000
+
+
+Started GET "/" for 129.105.10.175 at 2014-07-28 16:37:04 +0000
+Processing by ApplicationController#new as HTML
+  Rendered application/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 16:37:04 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 129.105.10.175 at 2014-07-28 16:37:04 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 129.105.10.175 at 2014-07-28 16:37:04 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 16:37:04 +0000
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 16:37:04 +0000
+
+
+Started GET "/" for 129.105.10.175 at 2014-07-28 16:37:08 +0000
+Processing by ApplicationController#new as HTML
+  Rendered application/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 16:37:09 +0000
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 16:37:09 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 16:37:09 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 129.105.10.175 at 2014-07-28 16:37:09 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 129.105.10.175 at 2014-07-28 16:37:09 +0000
+
+
+Started GET "/create_profile?name=arda&url=ikesonmez%40hotmail.com&caption=aduafdiuasfidsagikdgs" for 129.105.10.175 at 2014-07-28 16:37:23 +0000
+Processing by ApplicationController#create as HTML
+  Parameters: {"name"=>"arda", "url"=>"ikesonmez@hotmail.com", "caption"=>"aduafdiuasfidsagikdgs"}
+  [1m[35mAccount Load (0.8ms)[0m  SELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" IS NULL LIMIT 1
+Completed 500 Internal Server Error in 65ms
+
+NoMethodError (undefined method `name=' for nil:NilClass):
+  app/controllers/application_controller.rb:16:in `create'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.1ms)
+  [1m[36mAccount Load (21.1ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mSQL (2.2ms)[0m  [1mINSERT INTO "accounts" ("caption", "created_at", "name", "updated_at", "url") VALUES (?, ?, ?, ?, ?)[0m  [["caption", "Dfsdfsdfsdfsdfsd"], ["created_at", "2014-07-28 16:39:50.151293"], ["name", "arda"], ["updated_at", "2014-07-28 16:39:50.151293"], ["url", "ikesonmez"]]
+  [1m[35m (60.6ms)[0m  commit transaction
+  [1m[36mAccount Load (0.4ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  [1m[35mAccount Load (0.3ms)[0m  SELECT "accounts".* FROM "accounts"
+
+
+Started GET "/" for 129.105.10.175 at 2014-07-28 16:43:25 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#new as HTML
+  Rendered application/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 169ms (Views: 138.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 16:43:26 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 16:43:26 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 16:43:26 +0000
+
+
+Started GET "/create_profile?name=arda&url=ikesonmez%40hotmail.com&caption=adhasdma%3Bsmdsa" for 129.105.10.175 at 2014-07-28 16:43:43 +0000
+Processing by ApplicationController#create as HTML
+  Parameters: {"name"=>"arda", "url"=>"ikesonmez@hotmail.com", "caption"=>"adhasdma;smdsa"}
+  [1m[35mAccount Load (0.2ms)[0m  SELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" IS NULL LIMIT 1
+Completed 500 Internal Server Error in 29ms
+
+NoMethodError (undefined method `name=' for nil:NilClass):
+  app/controllers/application_controller.rb:16:in `create'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.3ms)
+
+
+Started GET "/" for 129.105.10.175 at 2014-07-28 16:45:32 +0000
+Processing by ApplicationController#new as HTML
+  Rendered application/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 16:45:32 +0000
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 16:45:32 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 16:45:32 +0000
+
+
+Started GET "/create_profile?name=arda&url=ikesonmez%40hotmail.com&caption=kjfvsdjfciusmfdds" for 129.105.10.175 at 2014-07-28 16:45:46 +0000
+Processing by ApplicationController#create as HTML
+  Parameters: {"name"=>"arda", "url"=>"ikesonmez@hotmail.com", "caption"=>"kjfvsdjfciusmfdds"}
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" IS NULL LIMIT 1[0m
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `name=' for nil:NilClass):
+  app/controllers/application_controller.rb:16:in `create'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.2ms)
+
+
+Started GET "/create_profile?name=arda&url=ikesonmez%40hotmail.com&caption=kjfvsdjfciusmfdds" for 129.105.10.175 at 2014-07-28 16:48:32 +0000
+Processing by ApplicationController#create as HTML
+  Parameters: {"name"=>"arda", "url"=>"ikesonmez@hotmail.com", "caption"=>"kjfvsdjfciusmfdds"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "accounts" ("caption", "created_at", "name", "updated_at", "url") VALUES (?, ?, ?, ?, ?)[0m  [["caption", "kjfvsdjfciusmfdds"], ["created_at", "2014-07-28 16:48:32.358494"], ["name", "arda"], ["updated_at", "2014-07-28 16:48:32.358494"], ["url", "ikesonmez@hotmail.com"]]
+  [1m[35m (45.1ms)[0m  commit transaction
+Completed 500 Internal Server Error in 68ms
+
+NameError (undefined local variable or method `profile' for #<ApplicationController:0x007fd5011729c8>):
+  app/controllers/application_controller.rb:20:in `create'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.6ms)
+
+
+Started GET "/" for 129.105.10.175 at 2014-07-28 17:46:15 +0000
+Processing by ApplicationController#new as HTML
+  Rendered application/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 17:46:15 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 17:46:15 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 17:46:15 +0000
+
+
+Started GET "/create_profile?name=v&url=v&caption=v" for 129.105.10.175 at 2014-07-28 17:46:19 +0000
+Processing by ApplicationController#create as HTML
+  Parameters: {"name"=>"v", "url"=>"v", "caption"=>"v"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "accounts" ("caption", "created_at", "name", "updated_at", "url") VALUES (?, ?, ?, ?, ?)  [["caption", "v"], ["created_at", "2014-07-28 17:46:19.903237"], ["name", "v"], ["updated_at", "2014-07-28 17:46:19.903237"], ["url", "v"]]
+  [1m[36m (115.4ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 125ms
+
+NameError (undefined local variable or method `profile' for #<ApplicationController:0x007fd5009a9890>):
+  app/controllers/application_controller.rb:20:in `create'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.6ms)
+
+
+Started GET "/create_profile?name=v&url=v&caption=v" for 129.105.10.175 at 2014-07-28 17:46:51 +0000
+Processing by ApplicationController#create as HTML
+  Parameters: {"name"=>"v", "url"=>"v", "caption"=>"v"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "accounts" ("caption", "created_at", "name", "updated_at", "url") VALUES (?, ?, ?, ?, ?)[0m  [["caption", "v"], ["created_at", "2014-07-28 17:46:51.851894"], ["name", "v"], ["updated_at", "2014-07-28 17:46:51.851894"], ["url", "v"]]
+  [1m[35m (35.1ms)[0m  commit transaction
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profile/:id
+Completed 302 Found in 52ms (ActiveRecord: 36.3ms)
+
+
+Started GET "/profile/:id" for 129.105.10.175 at 2014-07-28 17:46:51 +0000
+Processing by ApplicationController#show as HTML
+  Parameters: {"id"=>":id"}
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 0 LIMIT 1[0m
+  Rendered application/show.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <div>
+    2:   <h1><%= "#{@profile.name}" %></h1>
+    3:   <h2>
+    4:    <%= "#{@profile.url}" %>
+    5:   </h2>
+  app/views/application/show.html.erb:2:in `_app_views_application_show_html_erb___1584481465404201369_70276400489420'
+  app/controllers/application_controller.rb:11:in `show'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.8ms)
+
+
+Started GET "/profile/:id" for 129.105.10.175 at 2014-07-28 17:47:23 +0000
+Processing by ApplicationController#show as HTML
+  Parameters: {"id"=>":id"}
+  [1m[35mAccount Load (0.2ms)[0m  SELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 0 LIMIT 1
+  Rendered application/show.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <div>
+    2:   <h1><%= "#{@profile.name}" %></h1>
+    3:   <h2>
+    4:    <%= "#{@profile.url}" %>
+    5:   </h2>
+  app/views/application/show.html.erb:2:in `_app_views_application_show_html_erb___1584481465404201369_70276400489420'
+  app/controllers/application_controller.rb:11:in `show'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.8ms)
+
+
+Started GET "/profile/:id" for 129.105.10.175 at 2014-07-28 17:47:24 +0000
+Processing by ApplicationController#show as HTML
+  Parameters: {"id"=>":id"}
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 0 LIMIT 1[0m
+  Rendered application/show.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <div>
+    2:   <h1><%= "#{@profile.name}" %></h1>
+    3:   <h2>
+    4:    <%= "#{@profile.url}" %>
+    5:   </h2>
+  app/views/application/show.html.erb:2:in `_app_views_application_show_html_erb___1584481465404201369_70276400489420'
+  app/controllers/application_controller.rb:11:in `show'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.7ms)
+
+
+Started GET "/profile/:id" for 129.105.10.175 at 2014-07-28 17:47:25 +0000
+Processing by ApplicationController#show as HTML
+  Parameters: {"id"=>":id"}
+  [1m[35mAccount Load (0.3ms)[0m  SELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 0 LIMIT 1
+  Rendered application/show.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <div>
+    2:   <h1><%= "#{@profile.name}" %></h1>
+    3:   <h2>
+    4:    <%= "#{@profile.url}" %>
+    5:   </h2>
+  app/views/application/show.html.erb:2:in `_app_views_application_show_html_erb___1584481465404201369_70276400489420'
+  app/controllers/application_controller.rb:11:in `show'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.1ms)
+
+
+Started GET "/profile/:id" for 129.105.10.175 at 2014-07-28 17:48:06 +0000
+Processing by ApplicationController#show as HTML
+  Parameters: {"id"=>":id"}
+  [1m[36mAccount Load (0.2ms)[0m  [1mSELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 0 LIMIT 1[0m
+  Rendered application/show.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <div>
+    2:   <h1><%= "#{@profile.name}" %></h1>
+    3:   <h2>
+    4:    <%= "#{@profile.url}" %>
+    5:   </h2>
+  app/views/application/show.html.erb:2:in `_app_views_application_show_html_erb___1584481465404201369_70276400489420'
+  app/controllers/application_controller.rb:11:in `show'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.1ms)
+
+
+Started GET "/create_profile?name=v&url=v&caption=v" for 129.105.10.175 at 2014-07-28 17:49:19 +0000
+Processing by ApplicationController#create as HTML
+  Parameters: {"name"=>"v", "url"=>"v", "caption"=>"v"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "accounts" ("caption", "created_at", "name", "updated_at", "url") VALUES (?, ?, ?, ?, ?)[0m  [["caption", "v"], ["created_at", "2014-07-28 17:49:19.726298"], ["name", "v"], ["updated_at", "2014-07-28 17:49:19.726298"], ["url", "v"]]
+  [1m[35m (123.2ms)[0m  commit transaction
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 134ms (ActiveRecord: 124.3ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 17:49:19 +0000
+Processing by ApplicationController#index as HTML
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  Rendered application/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 17:49:20 +0000
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 17:49:20 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 17:49:20 +0000
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 17:50:37 +0000
+Processing by ApplicationController#index as HTML
+  [1m[35mAccount Load (0.3ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered application/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 17:50:37 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 17:50:37 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 129.105.10.175 at 2014-07-28 17:50:37 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 129.105.10.175 at 2014-07-28 17:50:37 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 17:50:37 +0000
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 17:52:08 +0000
+Processing by ApplicationController#index as HTML
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  Rendered application/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 17:52:08 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 17:52:08 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 17:52:08 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 129.105.10.175 at 2014-07-28 17:52:08 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 129.105.10.175 at 2014-07-28 17:52:08 +0000
+
+
+Started GET "/profile/1/edit" for 129.105.10.175 at 2014-07-28 17:52:09 +0000
+Processing by ApplicationController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAccount Load (0.3ms)[0m  SELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 1 LIMIT 1
+  Rendered application/edit.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 24ms (Views: 20.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/update_profile/1?name=ardas&url=ikesonmez&url=Dfsdfsdfsdfsdfsd" for 129.105.10.175 at 2014-07-28 17:52:14 +0000
+Processing by ApplicationController#update as HTML
+  Parameters: {"name"=>"ardas", "url"=>"Dfsdfsdfsdfsdfsd", "id"=>"1"}
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "accounts" SET "caption" = ?, "name" = ?, "updated_at" = ?, "url" = ? WHERE "accounts"."id" = 1[0m  [["caption", nil], ["name", "ardas"], ["updated_at", "2014-07-28 17:52:14.472563"], ["url", "Dfsdfsdfsdfsdfsd"]]
+  [1m[35m (81.4ms)[0m  commit transaction
+Completed 500 Internal Server Error in 89ms
+
+NameError (undefined local variable or method `profile' for #<ApplicationController:0x007fd4ffb1a4c8>):
+  app/controllers/application_controller.rb:34:in `update'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.1ms)
+
+
+Started GET "/update_profile/1?name=ardas&url=ikesonmez&url=Dfsdfsdfsdfsdfsd" for 129.105.10.175 at 2014-07-28 17:52:37 +0000
+Processing by ApplicationController#update as HTML
+  Parameters: {"name"=>"ardas", "url"=>"Dfsdfsdfsdfsdfsd", "id"=>"1"}
+  [1m[36mAccount Load (0.2ms)[0m  [1mSELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 9ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 17:52:37 +0000
+Processing by ApplicationController#index as HTML
+  [1m[35mAccount Load (0.3ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered application/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 17:52:37 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 17:52:37 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 129.105.10.175 at 2014-07-28 17:52:37 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 129.105.10.175 at 2014-07-28 17:52:37 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 17:52:37 +0000
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 17:53:56 +0000
+Processing by ApplicationController#index as HTML
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  Rendered application/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 17:53:57 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 129.105.10.175 at 2014-07-28 17:53:57 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 17:53:57 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 129.105.10.175 at 2014-07-28 17:53:57 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 17:53:57 +0000
+
+
+Started GET "/profile/1/edit" for 129.105.10.175 at 2014-07-28 17:53:59 +0000
+Processing by ApplicationController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAccount Load (0.3ms)[0m  SELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 1 LIMIT 1
+  Rendered application/edit.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/update_profile/1?name=ardas&url=Dfsdfsdfsdfsdfsd&url=from+turkey" for 129.105.10.175 at 2014-07-28 17:54:08 +0000
+Processing by ApplicationController#update as HTML
+  Parameters: {"name"=>"ardas", "url"=>"from turkey", "id"=>"1"}
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "accounts" SET "updated_at" = ?, "url" = ? WHERE "accounts"."id" = 1[0m  [["updated_at", "2014-07-28 17:54:08.450203"], ["url", "from turkey"]]
+  [1m[35m (121.7ms)[0m  commit transaction
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 126ms (ActiveRecord: 122.4ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 17:54:08 +0000
+Processing by ApplicationController#index as HTML
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  Rendered application/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 17:54:08 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 17:54:08 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 17:54:08 +0000
+
+
+Started GET "/profile/1/edit" for 129.105.10.175 at 2014-07-28 17:54:15 +0000
+Processing by ApplicationController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAccount Load (0.3ms)[0m  SELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 1 LIMIT 1
+  Rendered application/edit.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/update_profile/1?name=ardas&url=ikesonmez&url=from+turkey" for 129.105.10.175 at 2014-07-28 17:54:27 +0000
+Processing by ApplicationController#update as HTML
+  Parameters: {"name"=>"ardas", "url"=>"from turkey", "id"=>"1"}
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 17:54:27 +0000
+Processing by ApplicationController#index as HTML
+  [1m[35mAccount Load (0.3ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered application/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 17:54:27 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 17:54:27 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 17:54:27 +0000
+
+
+Started GET "/new_profile" for 129.105.10.175 at 2014-07-28 17:54:49 +0000
+Processing by ApplicationController#new as HTML
+  Rendered application/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 129.105.10.175 at 2014-07-28 17:56:01 +0000
+Processing by ApplicationController#new as HTML
+  Rendered application/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 17:56:01 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 17:56:01 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 17:56:01 +0000
+
+
+Started GET "/create_profile?name=&url=&caption=" for 129.105.10.175 at 2014-07-28 17:56:04 +0000
+Processing by ApplicationController#create as HTML
+  Parameters: {"name"=>"", "url"=>"", "caption"=>""}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "accounts" ("caption", "created_at", "name", "updated_at", "url") VALUES (?, ?, ?, ?, ?)  [["caption", ""], ["created_at", "2014-07-28 17:56:04.909163"], ["name", ""], ["updated_at", "2014-07-28 17:56:04.909163"], ["url", ""]]
+  [1m[36m (28.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 32ms (ActiveRecord: 29.1ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 17:56:05 +0000
+Processing by ApplicationController#index as HTML
+  [1m[35mAccount Load (0.4ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered application/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 17:56:05 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 17:56:05 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 17:56:05 +0000
+
+
+Started GET "/profile/1/destroy" for 129.105.10.175 at 2014-07-28 17:56:09 +0000
+
+ActionController::RoutingError (No route matches [GET] "/profile/1/destroy"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (59.9ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (126.7ms)
+
+
+Started GET "/profile/1/destroy" for 129.105.10.175 at 2014-07-28 17:56:09 +0000
+
+ActionController::RoutingError (No route matches [GET] "/profile/1/destroy"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (25.4ms)
+
+
+Started GET "/create_profile?name=f&url=f&caption=f" for 129.105.10.175 at 2014-07-28 17:58:48 +0000
+Processing by ApplicationController#create as HTML
+  Parameters: {"name"=>"f", "url"=>"f", "caption"=>"f"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "accounts" ("caption", "created_at", "name", "updated_at", "url") VALUES (?, ?, ?, ?, ?)  [["caption", "f"], ["created_at", "2014-07-28 17:58:48.676554"], ["name", "f"], ["updated_at", "2014-07-28 17:58:48.676554"], ["url", "f"]]
+  [1m[36m (37.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 58ms (ActiveRecord: 38.8ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 17:58:48 +0000
+Processing by ApplicationController#index as HTML
+  [1m[35mAccount Load (0.4ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered application/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 17:58:48 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 17:58:48 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 17:58:48 +0000
+
+
+Started GET "/profile/1/destroy" for 129.105.10.175 at 2014-07-28 17:58:51 +0000
+Processing by ApplicationController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "accounts" WHERE "accounts"."id" = ?[0m  [["id", 1]]
+  [1m[35m (35.1ms)[0m  commit transaction
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 40ms (ActiveRecord: 35.8ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 17:58:51 +0000
+Processing by ApplicationController#index as HTML
+  [1m[36mAccount Load (0.4ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  Rendered application/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/profile/2/destroy" for 129.105.10.175 at 2014-07-28 17:58:52 +0000
+Processing by ApplicationController#destroy as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAccount Load (0.3ms)[0m  SELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 2 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "accounts" WHERE "accounts"."id" = ?  [["id", 2]]
+  [1m[36m (59.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 63ms (ActiveRecord: 60.4ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 17:58:52 +0000
+Processing by ApplicationController#index as HTML
+  [1m[35mAccount Load (0.3ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered application/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/profile/3/destroy" for 129.105.10.175 at 2014-07-28 17:58:52 +0000
+Processing by ApplicationController#destroy as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 3 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "accounts" WHERE "accounts"."id" = ?[0m  [["id", 3]]
+  [1m[35m (60.3ms)[0m  commit transaction
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 64ms (ActiveRecord: 61.0ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 17:58:53 +0000
+Processing by ApplicationController#index as HTML
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  Rendered application/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/profile/4/destroy" for 129.105.10.175 at 2014-07-28 17:58:53 +0000
+Processing by ApplicationController#destroy as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mAccount Load (0.3ms)[0m  SELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 4 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.7ms)[0m  DELETE FROM "accounts" WHERE "accounts"."id" = ?  [["id", 4]]
+  [1m[36m (25.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 33ms (ActiveRecord: 27.4ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 17:58:53 +0000
+Processing by ApplicationController#index as HTML
+  [1m[35mAccount Load (0.3ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered application/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/profile/5/destroy" for 129.105.10.175 at 2014-07-28 17:58:54 +0000
+Processing by ApplicationController#destroy as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 5 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "accounts" WHERE "accounts"."id" = ?[0m  [["id", 5]]
+  [1m[35m (40.7ms)[0m  commit transaction
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 51ms (ActiveRecord: 41.4ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 17:58:54 +0000
+Processing by ApplicationController#index as HTML
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  Rendered application/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/profile/6/destroy" for 129.105.10.175 at 2014-07-28 17:58:54 +0000
+Processing by ApplicationController#destroy as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mAccount Load (0.3ms)[0m  SELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 6 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "accounts" WHERE "accounts"."id" = ?  [["id", 6]]
+  [1m[36m (32.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 40ms (ActiveRecord: 33.1ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 17:58:54 +0000
+Processing by ApplicationController#index as HTML
+  [1m[35mAccount Load (0.5ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered application/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/profile/7/destroy" for 129.105.10.175 at 2014-07-28 17:58:55 +0000
+Processing by ApplicationController#destroy as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 7 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "accounts" WHERE "accounts"."id" = ?[0m  [["id", 7]]
+  [1m[35m (30.3ms)[0m  commit transaction
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 34ms (ActiveRecord: 30.9ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 17:58:55 +0000
+Processing by ApplicationController#index as HTML
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  Rendered application/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/new_profile" for 129.105.10.175 at 2014-07-28 17:58:59 +0000
+Processing by ApplicationController#new as HTML
+  Rendered application/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create_profile?name=arda&url=ikesonmez%40hotmail.com&caption=from+turkey+now+at+a+ctd+program" for 129.105.10.175 at 2014-07-28 17:59:30 +0000
+Processing by ApplicationController#create as HTML
+  Parameters: {"name"=>"arda", "url"=>"ikesonmez@hotmail.com", "caption"=>"from turkey now at a ctd program"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "accounts" ("caption", "created_at", "name", "updated_at", "url") VALUES (?, ?, ?, ?, ?)[0m  [["caption", "from turkey now at a ctd program"], ["created_at", "2014-07-28 17:59:30.233921"], ["name", "arda"], ["updated_at", "2014-07-28 17:59:30.233921"], ["url", "ikesonmez@hotmail.com"]]
+  [1m[35m (40.9ms)[0m  commit transaction
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 44ms (ActiveRecord: 41.4ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 17:59:30 +0000
+Processing by ApplicationController#index as HTML
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  Rendered application/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 17:59:30 +0000
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 17:59:30 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 17:59:30 +0000
+
+
+Started GET "/profile/8/destroy" for 129.105.10.175 at 2014-07-28 17:59:32 +0000
+Processing by ApplicationController#destroy as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mAccount Load (0.3ms)[0m  SELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 8 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "accounts" WHERE "accounts"."id" = ?  [["id", 8]]
+  [1m[36m (40.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 45ms (ActiveRecord: 41.5ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 17:59:32 +0000
+Processing by ApplicationController#index as HTML
+  [1m[35mAccount Load (0.3ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered application/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/new_profile" for 129.105.10.175 at 2014-07-28 18:00:59 +0000
+Processing by ApplicationController#new as HTML
+  Rendered application/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create_profile?name=arda&url=ikesonmez%40hotmail.com&caption=fsdsahfdasjfdi%3Basgf%3Bisgfi%3Bgfalifliafsd" for 129.105.10.175 at 2014-07-28 18:01:15 +0000
+Processing by ApplicationController#create as HTML
+  Parameters: {"name"=>"arda", "url"=>"ikesonmez@hotmail.com", "caption"=>"fsdsahfdasjfdi;asgf;isgfi;gfalifliafsd"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "accounts" ("caption", "created_at", "name", "updated_at", "url") VALUES (?, ?, ?, ?, ?)  [["caption", "fsdsahfdasjfdi;asgf;isgfi;gfalifliafsd"], ["created_at", "2014-07-28 18:01:15.937875"], ["name", "arda"], ["updated_at", "2014-07-28 18:01:15.937875"], ["url", "ikesonmez@hotmail.com"]]
+  [1m[36m (1179.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 1186ms (ActiveRecord: 1180.0ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:01:17 +0000
+Processing by ApplicationController#index as HTML
+  [1m[35mAccount Load (0.3ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered application/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 18:01:17 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 18:01:17 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 18:01:17 +0000
+
+
+Started GET "/profile/9/edit" for 129.105.10.175 at 2014-07-28 18:01:20 +0000
+Processing by ApplicationController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 9 LIMIT 1[0m
+  Rendered application/edit.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/update_profile/9?name=arda&url=ikesonmez%40hotmail.com&url=fsdsahfdasjfdi%3Basgf%3Bisgfi%3Bgfalifliafsd" for 129.105.10.175 at 2014-07-28 18:01:24 +0000
+Processing by ApplicationController#update as HTML
+  Parameters: {"name"=>"arda", "url"=>"fsdsahfdasjfdi;asgf;isgfi;gfalifliafsd", "id"=>"9"}
+  [1m[35mAccount Load (0.3ms)[0m  SELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 9 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "accounts" SET "caption" = ?, "updated_at" = ?, "url" = ? WHERE "accounts"."id" = 9  [["caption", nil], ["updated_at", "2014-07-28 18:01:25.002072"], ["url", "fsdsahfdasjfdi;asgf;isgfi;gfalifliafsd"]]
+  [1m[36m (38.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 42ms (ActiveRecord: 38.7ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:01:25 +0000
+Processing by ApplicationController#index as HTML
+  [1m[35mAccount Load (0.3ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered application/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 18:01:25 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 18:01:25 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 18:01:25 +0000
+
+
+Started GET "/profile/9/edit" for 129.105.10.175 at 2014-07-28 18:01:27 +0000
+Processing by ApplicationController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 9 LIMIT 1[0m
+  Rendered application/edit.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/update_profile/9?name=arda&url=fsdsahfdasjfdi%3Basgf%3Bisgfi%3Bgfalifliafsd&url=" for 129.105.10.175 at 2014-07-28 18:01:30 +0000
+Processing by ApplicationController#update as HTML
+  Parameters: {"name"=>"arda", "url"=>"", "id"=>"9"}
+  [1m[35mAccount Load (0.3ms)[0m  SELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 9 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "accounts" SET "updated_at" = ?, "url" = ? WHERE "accounts"."id" = 9  [["updated_at", "2014-07-28 18:01:30.906510"], ["url", ""]]
+  [1m[36m (52.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 57ms (ActiveRecord: 53.1ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:01:31 +0000
+Processing by ApplicationController#index as HTML
+  [1m[35mAccount Load (0.3ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered application/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 18:01:31 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 18:01:31 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 18:01:31 +0000
+
+
+Started GET "/profile/9/destroy" for 129.105.10.175 at 2014-07-28 18:01:32 +0000
+Processing by ApplicationController#destroy as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 9 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "accounts" WHERE "accounts"."id" = ?[0m  [["id", 9]]
+  [1m[35m (37.4ms)[0m  commit transaction
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 41ms (ActiveRecord: 38.0ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:01:32 +0000
+Processing by ApplicationController#index as HTML
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  Rendered application/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/new_profile" for 129.105.10.175 at 2014-07-28 18:01:33 +0000
+Processing by ApplicationController#new as HTML
+  Rendered application/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create_profile?name=asdsd&url=dsadsadas&caption=dsadasdas" for 129.105.10.175 at 2014-07-28 18:01:38 +0000
+Processing by ApplicationController#create as HTML
+  Parameters: {"name"=>"asdsd", "url"=>"dsadsadas", "caption"=>"dsadasdas"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "accounts" ("caption", "created_at", "name", "updated_at", "url") VALUES (?, ?, ?, ?, ?)[0m  [["caption", "dsadasdas"], ["created_at", "2014-07-28 18:01:38.726909"], ["name", "asdsd"], ["updated_at", "2014-07-28 18:01:38.726909"], ["url", "dsadsadas"]]
+  [1m[35m (76.3ms)[0m  commit transaction
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 80ms (ActiveRecord: 76.9ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:01:38 +0000
+Processing by ApplicationController#index as HTML
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  Rendered application/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 18:01:39 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 18:01:39 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 18:01:39 +0000
+
+
+Started GET "/profile/10/edit" for 129.105.10.175 at 2014-07-28 18:01:40 +0000
+Processing by ApplicationController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mAccount Load (0.3ms)[0m  SELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 10 LIMIT 1
+  Rendered application/edit.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/update_profile/10?name=asdsd&url=arda&url=dsadasdas" for 129.105.10.175 at 2014-07-28 18:01:43 +0000
+Processing by ApplicationController#update as HTML
+  Parameters: {"name"=>"asdsd", "url"=>"dsadasdas", "id"=>"10"}
+  [1m[36mAccount Load (0.4ms)[0m  [1mSELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 10 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "accounts" SET "caption" = ?, "updated_at" = ?, "url" = ? WHERE "accounts"."id" = 10[0m  [["caption", nil], ["updated_at", "2014-07-28 18:01:43.905068"], ["url", "dsadasdas"]]
+  [1m[35m (19.0ms)[0m  commit transaction
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 24ms (ActiveRecord: 19.8ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:01:43 +0000
+Processing by ApplicationController#index as HTML
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  Rendered application/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 18:01:44 +0000
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 18:01:44 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 18:01:44 +0000
+
+
+Started GET "/profile/10/edit" for 129.105.10.175 at 2014-07-28 18:01:47 +0000
+Processing by ApplicationController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mAccount Load (0.3ms)[0m  SELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 10 LIMIT 1
+  Rendered application/edit.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/update_profile/10?name=arda&url=ikesonmez&url=ansdkjbsdl" for 129.105.10.175 at 2014-07-28 18:01:53 +0000
+Processing by ApplicationController#update as HTML
+  Parameters: {"name"=>"arda", "url"=>"ansdkjbsdl", "id"=>"10"}
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 10 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "accounts" SET "name" = ?, "updated_at" = ?, "url" = ? WHERE "accounts"."id" = 10[0m  [["name", "arda"], ["updated_at", "2014-07-28 18:01:53.530011"], ["url", "ansdkjbsdl"]]
+  [1m[35m (68.9ms)[0m  commit transaction
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 73ms (ActiveRecord: 69.6ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:01:53 +0000
+Processing by ApplicationController#index as HTML
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  Rendered application/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 18:01:53 +0000
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 18:01:53 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 18:01:53 +0000
+
+
+Started GET "/profile/10/destroy" for 129.105.10.175 at 2014-07-28 18:01:57 +0000
+Processing by ApplicationController#destroy as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mAccount Load (0.3ms)[0m  SELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 10 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "accounts" WHERE "accounts"."id" = ?  [["id", 10]]
+  [1m[36m (54.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 59ms (ActiveRecord: 55.5ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:01:57 +0000
+Processing by ApplicationController#index as HTML
+  [1m[35mAccount Load (0.3ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered application/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/new_profile" for 129.105.10.175 at 2014-07-28 18:02:59 +0000
+Processing by ApplicationController#new as HTML
+  Rendered application/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create_profile?name=arda&url=arda&caption=arda" for 129.105.10.175 at 2014-07-28 18:03:06 +0000
+Processing by ApplicationController#create as HTML
+  Parameters: {"name"=>"arda", "url"=>"arda", "caption"=>"arda"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "accounts" ("caption", "created_at", "name", "updated_at", "url") VALUES (?, ?, ?, ?, ?)  [["caption", "arda"], ["created_at", "2014-07-28 18:03:06.484161"], ["name", "arda"], ["updated_at", "2014-07-28 18:03:06.484161"], ["url", "arda"]]
+  [1m[36m (121.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 125ms (ActiveRecord: 122.2ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:03:06 +0000
+Processing by ApplicationController#index as HTML
+  [1m[35mAccount Load (0.3ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered application/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 18:03:06 +0000
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 18:03:06 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 18:03:06 +0000
+
+
+Started GET "/profile/11/edit" for 129.105.10.175 at 2014-07-28 18:03:08 +0000
+Processing by ApplicationController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 11 LIMIT 1[0m
+  Rendered application/edit.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/update_profile/11?name=ardas&url=arda&url=arda" for 129.105.10.175 at 2014-07-28 18:03:10 +0000
+Processing by ApplicationController#update as HTML
+  Parameters: {"name"=>"ardas", "url"=>"arda", "id"=>"11"}
+  [1m[35mAccount Load (0.3ms)[0m  SELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 11 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "accounts" SET "caption" = ?, "name" = ?, "updated_at" = ? WHERE "accounts"."id" = 11  [["caption", nil], ["name", "ardas"], ["updated_at", "2014-07-28 18:03:10.574605"]]
+  [1m[36m (133.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 137ms (ActiveRecord: 134.2ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:03:10 +0000
+Processing by ApplicationController#index as HTML
+  [1m[35mAccount Load (0.3ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered application/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 18:03:10 +0000
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 18:03:10 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 18:03:10 +0000
+
+
+Started GET "/profile/11/edit" for 129.105.10.175 at 2014-07-28 18:03:13 +0000
+Processing by ApplicationController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 11 LIMIT 1[0m
+  Rendered application/edit.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/update_profile/11?name=ardas&url=ardas&url=ardas" for 129.105.10.175 at 2014-07-28 18:03:18 +0000
+Processing by ApplicationController#update as HTML
+  Parameters: {"name"=>"ardas", "url"=>"ardas", "id"=>"11"}
+  [1m[35mAccount Load (0.3ms)[0m  SELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 11 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "accounts" SET "updated_at" = ?, "url" = ? WHERE "accounts"."id" = 11  [["updated_at", "2014-07-28 18:03:18.690382"], ["url", "ardas"]]
+  [1m[36m (56.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 60ms (ActiveRecord: 56.8ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:03:18 +0000
+Processing by ApplicationController#index as HTML
+  [1m[35mAccount Load (0.4ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered application/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 18:03:18 +0000
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 18:03:19 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 18:03:19 +0000
+
+
+Started GET "/profile/11/edit" for 129.105.10.175 at 2014-07-28 18:03:20 +0000
+Processing by ApplicationController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 11 LIMIT 1[0m
+  Rendered application/edit.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/update_profile/11?name=ardas&url=ardas&url=arrdas" for 129.105.10.175 at 2014-07-28 18:03:24 +0000
+Processing by ApplicationController#update as HTML
+  Parameters: {"name"=>"ardas", "url"=>"arrdas", "id"=>"11"}
+  [1m[35mAccount Load (0.3ms)[0m  SELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 11 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "accounts" SET "updated_at" = ?, "url" = ? WHERE "accounts"."id" = 11  [["updated_at", "2014-07-28 18:03:24.982692"], ["url", "arrdas"]]
+  [1m[36m (44.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 53ms (ActiveRecord: 45.5ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:03:25 +0000
+Processing by ApplicationController#index as HTML
+  [1m[35mAccount Load (0.3ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered application/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 18:03:25 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 18:03:25 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 18:03:25 +0000
+
+
+Started GET "/profile/11/destroy" for 129.105.10.175 at 2014-07-28 18:03:27 +0000
+Processing by ApplicationController#destroy as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 11 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "accounts" WHERE "accounts"."id" = ?[0m  [["id", 11]]
+  [1m[35m (145.0ms)[0m  commit transaction
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 149ms (ActiveRecord: 145.7ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:03:27 +0000
+Processing by ApplicationController#index as HTML
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  Rendered application/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/new_profile" for 129.105.10.175 at 2014-07-28 18:04:22 +0000
+Processing by ApplicationController#new as HTML
+  Rendered application/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create_profile?name=arda&url=ikeaso%3Bdaps&caption=siydfasiudq" for 129.105.10.175 at 2014-07-28 18:04:29 +0000
+Processing by ApplicationController#create as HTML
+  Parameters: {"name"=>"arda", "url"=>"ikeaso;daps", "caption"=>"siydfasiudq"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "accounts" ("caption", "created_at", "name", "updated_at", "url") VALUES (?, ?, ?, ?, ?)[0m  [["caption", "siydfasiudq"], ["created_at", "2014-07-28 18:04:29.660702"], ["name", "arda"], ["updated_at", "2014-07-28 18:04:29.660702"], ["url", "ikeaso;daps"]]
+  [1m[35m (74.7ms)[0m  commit transaction
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 78ms (ActiveRecord: 75.2ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:04:29 +0000
+Processing by ApplicationController#index as HTML
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  Rendered application/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 11ms (Views: 4.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 18:04:29 +0000
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 18:04:29 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 18:04:29 +0000
+
+
+Started GET "/new_profile" for 129.105.10.175 at 2014-07-28 18:04:31 +0000
+Processing by ApplicationController#new as HTML
+  Rendered application/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create_profile?name=dasdsad&url=sdasds&caption=asdsad" for 129.105.10.175 at 2014-07-28 18:04:34 +0000
+Processing by ApplicationController#create as HTML
+  Parameters: {"name"=>"dasdsad", "url"=>"sdasds", "caption"=>"asdsad"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "accounts" ("caption", "created_at", "name", "updated_at", "url") VALUES (?, ?, ?, ?, ?)[0m  [["caption", "asdsad"], ["created_at", "2014-07-28 18:04:34.627768"], ["name", "dasdsad"], ["updated_at", "2014-07-28 18:04:34.627768"], ["url", "sdasds"]]
+  [1m[35m (42.9ms)[0m  commit transaction
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 46ms (ActiveRecord: 43.4ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:04:34 +0000
+Processing by ApplicationController#index as HTML
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  Rendered application/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 18:04:34 +0000
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 18:04:34 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 18:04:34 +0000
+
+
+Started GET "/profile/13/destroy" for 129.105.10.175 at 2014-07-28 18:04:36 +0000
+Processing by ApplicationController#destroy as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mAccount Load (0.3ms)[0m  SELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 13 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "accounts" WHERE "accounts"."id" = ?  [["id", 13]]
+  [1m[36m (29.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 33ms (ActiveRecord: 29.6ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:04:36 +0000
+Processing by ApplicationController#index as HTML
+  [1m[35mAccount Load (0.3ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered application/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/profile/12/edit" for 129.105.10.175 at 2014-07-28 18:04:37 +0000
+Processing by ApplicationController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 12 LIMIT 1[0m
+  Rendered application/edit.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/update_profile/12?name=arda&url=arda&url=arda" for 129.105.10.175 at 2014-07-28 18:04:47 +0000
+Processing by ApplicationController#update as HTML
+  Parameters: {"name"=>"arda", "url"=>"arda", "id"=>"12"}
+  [1m[35mAccount Load (0.3ms)[0m  SELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 12 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "accounts" SET "caption" = ?, "updated_at" = ?, "url" = ? WHERE "accounts"."id" = 12  [["caption", nil], ["updated_at", "2014-07-28 18:04:47.582028"], ["url", "arda"]]
+  [1m[36m (64.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 69ms (ActiveRecord: 64.8ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:04:47 +0000
+Processing by ApplicationController#index as HTML
+  [1m[35mAccount Load (0.3ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered application/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 18:04:47 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 18:04:47 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 18:04:47 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddImageToAccount (20140728180631)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "accounts" ADD "image" varchar(255)[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140728180631"]]
+  [1m[36m (31.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/profile/12/edit" for 129.105.10.175 at 2014-07-28 18:07:50 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[35mAccount Load (0.2ms)[0m  SELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 12 LIMIT 1
+  Rendered application/edit.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 29ms (Views: 12.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/update_profile/12?name=arda&url=arda&caption=arda" for 129.105.10.175 at 2014-07-28 18:07:53 +0000
+Processing by ApplicationController#update as HTML
+  Parameters: {"name"=>"arda", "url"=>"arda", "caption"=>"arda", "id"=>"12"}
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 12 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "accounts" SET "caption" = ?, "updated_at" = ? WHERE "accounts"."id" = 12[0m  [["caption", "arda"], ["updated_at", "2014-07-28 18:07:53.291537"]]
+  [1m[35m (32.3ms)[0m  commit transaction
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 37ms (ActiveRecord: 33.0ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:07:53 +0000
+Processing by ApplicationController#index as HTML
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  Rendered application/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 18:07:53 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 18:07:53 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 18:07:53 +0000
+
+
+Started GET "/" for 129.105.10.175 at 2014-07-28 18:17:38 +0000
+Processing by ApplicationController#new as HTML
+  Rendered application/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 18:17:38 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 18:17:38 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 18:17:38 +0000
+
+
+Started GET "/create_profile?name=arda&url=ikesonmez%40hotmail.com&caption=dsfdfajfdkasfkusfudfuasfduyasfduasfduasfduyaysfdyasfuydffauysfdasufduaksfdukyasfdusfdkusafdkuafsuydsauyfas&image=http%3A%2F%2Ffc09.deviantart.net%2Ffs70%2Ff%2F2010%2F162%2Fc%2F6%2FCool_guy_by_88grzes.jpg" for 129.105.10.175 at 2014-07-28 18:18:13 +0000
+Processing by ApplicationController#create as HTML
+  Parameters: {"name"=>"arda", "url"=>"ikesonmez@hotmail.com", "caption"=>"dsfdfajfdkasfkusfudfuasfduyasfduasfduasfduyaysfdyasfuydffauysfdasufduaksfdukyasfdusfdkusafdkuafsuydsauyfas", "image"=>"http://fc09.deviantart.net/fs70/f/2010/162/c/6/Cool_guy_by_88grzes.jpg"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "accounts" ("caption", "created_at", "image", "name", "updated_at", "url") VALUES (?, ?, ?, ?, ?, ?)[0m  [["caption", "dsfdfajfdkasfkusfudfuasfduyasfduasfduasfduyaysfdyasfuydffauysfdasufduaksfdukyasfdusfdkusafdkuafsuydsauyfas"], ["created_at", "2014-07-28 18:18:13.109984"], ["image", "http://fc09.deviantart.net/fs70/f/2010/162/c/6/Cool_guy_by_88grzes.jpg"], ["name", "arda"], ["updated_at", "2014-07-28 18:18:13.109984"], ["url", "ikesonmez@hotmail.com"]]
+  [1m[35m (116.6ms)[0m  commit transaction
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 127ms (ActiveRecord: 117.8ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:18:13 +0000
+Processing by ApplicationController#index as HTML
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  Rendered application/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 18:18:13 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 18:18:13 +0000
+
+
+Started GET "/profile/12/destroy" for 129.105.10.175 at 2014-07-28 18:18:20 +0000
+Processing by ApplicationController#destroy as HTML
+  Parameters: {"id"=>"12"}
+  [1m[35mAccount Load (0.3ms)[0m  SELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 12 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "accounts" WHERE "accounts"."id" = ?  [["id", 12]]
+  [1m[36m (34.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 39ms (ActiveRecord: 35.6ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:18:20 +0000
+Processing by ApplicationController#index as HTML
+  [1m[35mAccount Load (0.3ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered application/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/profile/14/destroy" for 129.105.10.175 at 2014-07-28 18:18:23 +0000
+Processing by ApplicationController#destroy as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 14 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "accounts" WHERE "accounts"."id" = ?[0m  [["id", 14]]
+  [1m[35m (43.0ms)[0m  commit transaction
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 47ms (ActiveRecord: 43.7ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:18:23 +0000
+Processing by ApplicationController#index as HTML
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  Rendered application/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/create_profile?name=arda&url=ikesonmez%40hotmail.com&caption=dsfdfajfdkasfkusfudfuasfduyasfduasfduasfduyaysfdyasfuydffauysfdasufduaksfdukyasfdusfdkusafdkuafsuydsauyfas&image=http%3A%2F%2Ffc09.deviantart.net%2Ffs70%2Ff%2F2010%2F162%2Fc%2F6%2FCool_guy_by_88grzes.jpg" for 129.105.10.175 at 2014-07-28 18:20:08 +0000
+Processing by ApplicationController#create as HTML
+  Parameters: {"name"=>"arda", "url"=>"ikesonmez@hotmail.com", "caption"=>"dsfdfajfdkasfkusfudfuasfduyasfduasfduasfduyaysfdyasfuydffauysfdasufduaksfdukyasfdusfdkusafdkuafsuydsauyfas", "image"=>"http://fc09.deviantart.net/fs70/f/2010/162/c/6/Cool_guy_by_88grzes.jpg"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "accounts" ("caption", "created_at", "image", "name", "updated_at", "url") VALUES (?, ?, ?, ?, ?, ?)[0m  [["caption", "dsfdfajfdkasfkusfudfuasfduyasfduasfduasfduyaysfdyasfuydffauysfdasufduaksfdukyasfdusfdkusafdkuafsuydsauyfas"], ["created_at", "2014-07-28 18:20:08.305316"], ["image", "http://fc09.deviantart.net/fs70/f/2010/162/c/6/Cool_guy_by_88grzes.jpg"], ["name", "arda"], ["updated_at", "2014-07-28 18:20:08.305316"], ["url", "ikesonmez@hotmail.com"]]
+  [1m[35m (88.1ms)[0m  commit transaction
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 92ms (ActiveRecord: 88.5ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:20:08 +0000
+Processing by ApplicationController#index as HTML
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  Rendered application/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 34ms (Views: 32.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 18:20:08 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 18:20:08 +0000
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:20:39 +0000
+Processing by ApplicationController#index as HTML
+  [1m[35mAccount Load (0.3ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered application/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 129.105.10.175 at 2014-07-28 18:20:40 +0000
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 18:20:40 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 129.105.10.175 at 2014-07-28 18:20:40 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 18:20:40 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 18:20:40 +0000
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:21:43 +0000
+Processing by ApplicationController#index as HTML
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  Rendered application/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 18:21:43 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 18:21:43 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 18:21:43 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 129.105.10.175 at 2014-07-28 18:21:43 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 129.105.10.175 at 2014-07-28 18:21:43 +0000
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:22:08 +0000
+Processing by ApplicationController#index as HTML
+  [1m[35mAccount Load (0.3ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered application/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 129.105.10.175 at 2014-07-28 18:22:08 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 18:22:08 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 129.105.10.175 at 2014-07-28 18:22:08 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 18:22:08 +0000
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 18:22:08 +0000
+
+
+Started GET "/profile/15/destroy" for 129.105.10.175 at 2014-07-28 18:23:02 +0000
+Processing by ApplicationController#destroy as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 15 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "accounts" WHERE "accounts"."id" = ?[0m  [["id", 15]]
+  [1m[35m (35.5ms)[0m  commit transaction
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 39ms (ActiveRecord: 36.2ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:23:02 +0000
+Processing by ApplicationController#index as HTML
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  Rendered application/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/new_profile" for 129.105.10.175 at 2014-07-28 18:23:03 +0000
+Processing by ApplicationController#new as HTML
+  Rendered application/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_profile" for 129.105.10.175 at 2014-07-28 18:24:19 +0000
+Processing by ApplicationController#new as HTML
+  Rendered application/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 20ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 129.105.10.175 at 2014-07-28 18:24:19 +0000
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 18:24:19 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 18:24:19 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 129.105.10.175 at 2014-07-28 18:24:19 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 18:24:19 +0000
+
+
+Started GET "/create_profile?name=arda&url=ikesonmez%40hotmail.com&caption=asaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&image=http%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F3%2F36%2FHopetoun_falls.jpg" for 129.105.10.175 at 2014-07-28 18:24:50 +0000
+Processing by ApplicationController#create as HTML
+  Parameters: {"name"=>"arda", "url"=>"ikesonmez@hotmail.com", "caption"=>"asaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "image"=>"http://upload.wikimedia.org/wikipedia/commons/3/36/Hopetoun_falls.jpg"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "accounts" ("caption", "created_at", "image", "name", "updated_at", "url") VALUES (?, ?, ?, ?, ?, ?)[0m  [["caption", "asaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"], ["created_at", "2014-07-28 18:24:50.686742"], ["image", "http://upload.wikimedia.org/wikipedia/commons/3/36/Hopetoun_falls.jpg"], ["name", "arda"], ["updated_at", "2014-07-28 18:24:50.686742"], ["url", "ikesonmez@hotmail.com"]]
+  [1m[35m (34.5ms)[0m  commit transaction
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 38ms (ActiveRecord: 35.0ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:24:50 +0000
+Processing by ApplicationController#index as HTML
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  Rendered application/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 18:24:50 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 18:24:50 +0000
+
+
+Started GET "/profile/16/edit" for 129.105.10.175 at 2014-07-28 18:24:56 +0000
+Processing by ApplicationController#edit as HTML
+  Parameters: {"id"=>"16"}
+  [1m[35mAccount Load (0.4ms)[0m  SELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 16 LIMIT 1
+  Rendered application/edit.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/update_profile/16?name=arda&url=ikesonmez%40hotmail.com&caption=asaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&image=http%3A%2F%2Ftmacfitness.com%2Fwp-content%2Fuploads%2F2013%2F04%2FBeauty-of-nature-random-4884759-1280-800.jpg" for 129.105.10.175 at 2014-07-28 18:25:07 +0000
+Processing by ApplicationController#update as HTML
+  Parameters: {"name"=>"arda", "url"=>"ikesonmez@hotmail.com", "caption"=>"asaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "image"=>"http://tmacfitness.com/wp-content/uploads/2013/04/Beauty-of-nature-random-4884759-1280-800.jpg", "id"=>"16"}
+  [1m[36mAccount Load (0.6ms)[0m  [1mSELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 16 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "accounts" SET "image" = ?, "updated_at" = ? WHERE "accounts"."id" = 16[0m  [["image", "http://tmacfitness.com/wp-content/uploads/2013/04/Beauty-of-nature-random-4884759-1280-800.jpg"], ["updated_at", "2014-07-28 18:25:07.201921"]]
+  [1m[35m (123.8ms)[0m  commit transaction
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 129ms (ActiveRecord: 124.8ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:25:07 +0000
+Processing by ApplicationController#index as HTML
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  Rendered application/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 18:25:07 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 129.105.10.175 at 2014-07-28 18:25:07 +0000
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 18:25:07 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 18:25:07 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 129.105.10.175 at 2014-07-28 18:25:07 +0000
+
+
+Started GET "/profile/16/edit" for 129.105.10.175 at 2014-07-28 18:25:14 +0000
+Processing by ApplicationController#edit as HTML
+  Parameters: {"id"=>"16"}
+  [1m[35mAccount Load (0.3ms)[0m  SELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 16 LIMIT 1
+  Rendered application/edit.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/update_profile/16?name=Arda&url=ikesonmez%40hotmail.com&caption=asaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&image=http%3A%2F%2Ftmacfitness.com%2Fwp-content%2Fuploads%2F2013%2F04%2FBeauty-of-nature-random-4884759-1280-800.jpg" for 129.105.10.175 at 2014-07-28 18:25:18 +0000
+Processing by ApplicationController#update as HTML
+  Parameters: {"name"=>"Arda", "url"=>"ikesonmez@hotmail.com", "caption"=>"asaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "image"=>"http://tmacfitness.com/wp-content/uploads/2013/04/Beauty-of-nature-random-4884759-1280-800.jpg", "id"=>"16"}
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 16 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "accounts" SET "name" = ?, "updated_at" = ? WHERE "accounts"."id" = 16[0m  [["name", "Arda"], ["updated_at", "2014-07-28 18:25:18.370597"]]
+  [1m[35m (61.8ms)[0m  commit transaction
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 66ms (ActiveRecord: 62.6ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:25:18 +0000
+Processing by ApplicationController#index as HTML
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  Rendered application/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 129.105.10.175 at 2014-07-28 18:25:18 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 18:25:18 +0000
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 18:25:18 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 18:25:18 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 129.105.10.175 at 2014-07-28 18:25:18 +0000
+
+
+Started GET "/profile/16/destroy" for 129.105.10.175 at 2014-07-28 18:25:25 +0000
+Processing by ApplicationController#destroy as HTML
+  Parameters: {"id"=>"16"}
+  [1m[35mAccount Load (0.3ms)[0m  SELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 16 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "accounts" WHERE "accounts"."id" = ?  [["id", 16]]
+  [1m[36m (92.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 96ms (ActiveRecord: 92.7ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:25:25 +0000
+Processing by ApplicationController#index as HTML
+  [1m[35mAccount Load (0.3ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered application/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/new_profile" for 129.105.10.175 at 2014-07-28 18:26:20 +0000
+Processing by ApplicationController#new as HTML
+  Rendered application/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create_profile?name=arda&url=ikesonmez%40hotmail.com&caption=asaaaaaaaaaaaaaaaaaaaa&image=http%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F1%2F1a%2FBachalpseeflowers.jpg" for 129.105.10.175 at 2014-07-28 18:26:50 +0000
+Processing by ApplicationController#create as HTML
+  Parameters: {"name"=>"arda", "url"=>"ikesonmez@hotmail.com", "caption"=>"asaaaaaaaaaaaaaaaaaaaa", "image"=>"http://upload.wikimedia.org/wikipedia/commons/1/1a/Bachalpseeflowers.jpg"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "accounts" ("caption", "created_at", "image", "name", "updated_at", "url") VALUES (?, ?, ?, ?, ?, ?)  [["caption", "asaaaaaaaaaaaaaaaaaaaa"], ["created_at", "2014-07-28 18:26:50.544021"], ["image", "http://upload.wikimedia.org/wikipedia/commons/1/1a/Bachalpseeflowers.jpg"], ["name", "arda"], ["updated_at", "2014-07-28 18:26:50.544021"], ["url", "ikesonmez@hotmail.com"]]
+  [1m[36m (71.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 82ms (ActiveRecord: 71.7ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:26:50 +0000
+Processing by ApplicationController#index as HTML
+  [1m[35mAccount Load (0.3ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered application/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 18:26:50 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 18:26:50 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 129.105.10.175 at 2014-07-28 18:26:50 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 129.105.10.175 at 2014-07-28 18:26:51 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 18:26:51 +0000
+
+
+Started GET "/profile/17/destroy" for 129.105.10.175 at 2014-07-28 18:26:57 +0000
+Processing by ApplicationController#destroy as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 17 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "accounts" WHERE "accounts"."id" = ?[0m  [["id", 17]]
+  [1m[35m (44.3ms)[0m  commit transaction
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 48ms (ActiveRecord: 45.0ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:26:57 +0000
+Processing by ApplicationController#index as HTML
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  Rendered application/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/new_profile" for 129.105.10.175 at 2014-07-28 18:26:59 +0000
+Processing by ApplicationController#new as HTML
+  Rendered application/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create_profile?name=arda&url=ikesonmez%40hotmail.com&caption=aaaaaaaaaaaaaaaaaaaaaa&image=http%3A%2F%2Fwww.w8themes.com%2Fwp-content%2Fuploads%2F2013%2F08%2FHigh-Resolution-Nature-Wallpaper.jpg" for 129.105.10.175 at 2014-07-28 18:27:20 +0000
+Processing by ApplicationController#create as HTML
+  Parameters: {"name"=>"arda", "url"=>"ikesonmez@hotmail.com", "caption"=>"aaaaaaaaaaaaaaaaaaaaaa", "image"=>"http://www.w8themes.com/wp-content/uploads/2013/08/High-Resolution-Nature-Wallpaper.jpg"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "accounts" ("caption", "created_at", "image", "name", "updated_at", "url") VALUES (?, ?, ?, ?, ?, ?)[0m  [["caption", "aaaaaaaaaaaaaaaaaaaaaa"], ["created_at", "2014-07-28 18:27:20.329637"], ["image", "http://www.w8themes.com/wp-content/uploads/2013/08/High-Resolution-Nature-Wallpaper.jpg"], ["name", "arda"], ["updated_at", "2014-07-28 18:27:20.329637"], ["url", "ikesonmez@hotmail.com"]]
+  [1m[35m (52.8ms)[0m  commit transaction
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 56ms (ActiveRecord: 53.2ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:27:20 +0000
+Processing by ApplicationController#index as HTML
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  Rendered application/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 18:27:20 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 18:27:20 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 18:27:20 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 129.105.10.175 at 2014-07-28 18:27:20 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 129.105.10.175 at 2014-07-28 18:27:20 +0000
+
+
+Started GET "/profile/18/edit" for 129.105.10.175 at 2014-07-28 18:27:40 +0000
+Processing by ApplicationController#edit as HTML
+  Parameters: {"id"=>"18"}
+  [1m[35mAccount Load (0.3ms)[0m  SELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 18 LIMIT 1
+  Rendered application/edit.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/update_profile/18?name=arda+sonmez&url=ikesonmez%40hotmail.com&caption=aaaaaaaaaaaaaaaaaaaaaa&image=http%3A%2F%2Fwww.w8themes.com%2Fwp-content%2Fuploads%2F2013%2F08%2FHigh-Resolution-Nature-Wallpaper.jpg" for 129.105.10.175 at 2014-07-28 18:27:44 +0000
+Processing by ApplicationController#update as HTML
+  Parameters: {"name"=>"arda sonmez", "url"=>"ikesonmez@hotmail.com", "caption"=>"aaaaaaaaaaaaaaaaaaaaaa", "image"=>"http://www.w8themes.com/wp-content/uploads/2013/08/High-Resolution-Nature-Wallpaper.jpg", "id"=>"18"}
+  [1m[36mAccount Load (0.5ms)[0m  [1mSELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 18 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "accounts" SET "name" = ?, "updated_at" = ? WHERE "accounts"."id" = 18[0m  [["name", "arda sonmez"], ["updated_at", "2014-07-28 18:27:44.161011"]]
+  [1m[35m (64.8ms)[0m  commit transaction
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 70ms (ActiveRecord: 65.9ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:27:44 +0000
+Processing by ApplicationController#index as HTML
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  Rendered application/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 18:27:44 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 18:27:44 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 129.105.10.175 at 2014-07-28 18:27:44 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 18:27:44 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 129.105.10.175 at 2014-07-28 18:27:44 +0000
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:28:35 +0000
+Processing by ApplicationController#index as HTML
+  [1m[35mAccount Load (0.3ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered application/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 18:28:36 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 129.105.10.175 at 2014-07-28 18:28:36 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 129.105.10.175 at 2014-07-28 18:28:36 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 18:28:36 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 18:28:36 +0000
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:28:38 +0000
+Processing by ApplicationController#index as HTML
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  Rendered application/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 129.105.10.175 at 2014-07-28 18:28:38 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 129.105.10.175 at 2014-07-28 18:28:38 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 18:28:38 +0000
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 18:28:38 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 18:28:38 +0000
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:28:52 +0000
+Processing by ApplicationController#index as HTML
+  [1m[35mAccount Load (0.3ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered application/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 18:28:52 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 18:28:52 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 129.105.10.175 at 2014-07-28 18:28:52 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 129.105.10.175 at 2014-07-28 18:28:52 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 18:28:52 +0000
+
+
+Started GET "/profile/18/edit" for 129.105.10.175 at 2014-07-28 18:29:32 +0000
+Processing by ApplicationController#edit as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 18 LIMIT 1[0m
+  Rendered application/edit.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/update_profile/18?name=arda&url=ikesonmez%40hotmail.com&caption=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&image=http%3A%2F%2Fwww.w8themes.com%2Fwp-content%2Fuploads%2F2013%2F08%2FHigh-Resolution-Nature-Wallpaper.jpg" for 129.105.10.175 at 2014-07-28 18:29:39 +0000
+Processing by ApplicationController#update as HTML
+  Parameters: {"name"=>"arda", "url"=>"ikesonmez@hotmail.com", "caption"=>"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "image"=>"http://www.w8themes.com/wp-content/uploads/2013/08/High-Resolution-Nature-Wallpaper.jpg", "id"=>"18"}
+  [1m[35mAccount Load (0.3ms)[0m  SELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 18 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "accounts" SET "caption" = ?, "name" = ?, "updated_at" = ? WHERE "accounts"."id" = 18  [["caption", "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"], ["name", "arda"], ["updated_at", "2014-07-28 18:29:39.803635"]]
+  [1m[36m (29.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 33ms (ActiveRecord: 30.2ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:29:39 +0000
+Processing by ApplicationController#index as HTML
+  [1m[35mAccount Load (0.4ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered application/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 18:29:40 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 129.105.10.175 at 2014-07-28 18:29:40 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 18:29:40 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 129.105.10.175 at 2014-07-28 18:29:40 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 18:29:40 +0000
+
+
+Started GET "/profile/18/destroy" for 129.105.10.175 at 2014-07-28 18:29:52 +0000
+Processing by ApplicationController#destroy as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 18 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "accounts" WHERE "accounts"."id" = ?[0m  [["id", 18]]
+  [1m[35m (37.9ms)[0m  commit transaction
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 41ms (ActiveRecord: 38.6ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:29:52 +0000
+Processing by ApplicationController#index as HTML
+  [1m[36mAccount Load (0.4ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  Rendered application/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/new_profile" for 129.105.10.175 at 2014-07-28 18:29:53 +0000
+Processing by ApplicationController#new as HTML
+  Rendered application/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create_profile?name=arda&url=fgadsjdgiask&caption=dsugkjfsdgo&image=http%3A%2F%2Fwww.technotrigger.com%2Fwp-content%2Fuploads%2F2014%2F01%2Fhouse-in-green-field.jpg" for 129.105.10.175 at 2014-07-28 18:30:08 +0000
+Processing by ApplicationController#create as HTML
+  Parameters: {"name"=>"arda", "url"=>"fgadsjdgiask", "caption"=>"dsugkjfsdgo", "image"=>"http://www.technotrigger.com/wp-content/uploads/2014/01/house-in-green-field.jpg"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "accounts" ("caption", "created_at", "image", "name", "updated_at", "url") VALUES (?, ?, ?, ?, ?, ?)[0m  [["caption", "dsugkjfsdgo"], ["created_at", "2014-07-28 18:30:08.630130"], ["image", "http://www.technotrigger.com/wp-content/uploads/2014/01/house-in-green-field.jpg"], ["name", "arda"], ["updated_at", "2014-07-28 18:30:08.630130"], ["url", "fgadsjdgiask"]]
+  [1m[35m (30.1ms)[0m  commit transaction
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 34ms (ActiveRecord: 30.5ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:30:08 +0000
+Processing by ApplicationController#index as HTML
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  Rendered application/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 18:30:08 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 129.105.10.175 at 2014-07-28 18:30:08 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 129.105.10.175 at 2014-07-28 18:30:08 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 18:30:08 +0000
+
+
+Started GET "/profile/19/edit" for 129.105.10.175 at 2014-07-28 18:30:26 +0000
+Processing by ApplicationController#edit as HTML
+  Parameters: {"id"=>"19"}
+  [1m[35mAccount Load (0.3ms)[0m  SELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 19 LIMIT 1
+  Rendered application/edit.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/update_profile/19?name=arda&url=fgadsjdgiask&caption=dsugkjfsdgossssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss&image=http%3A%2F%2Fwww.technotrigger.com%2Fwp-content%2Fuploads%2F2014%2F01%2Fhouse-in-green-field.jpg" for 129.105.10.175 at 2014-07-28 18:30:31 +0000
+Processing by ApplicationController#update as HTML
+  Parameters: {"name"=>"arda", "url"=>"fgadsjdgiask", "caption"=>"dsugkjfsdgossssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss", "image"=>"http://www.technotrigger.com/wp-content/uploads/2014/01/house-in-green-field.jpg", "id"=>"19"}
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 19 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "accounts" SET "caption" = ?, "updated_at" = ? WHERE "accounts"."id" = 19[0m  [["caption", "dsugkjfsdgossssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss"], ["updated_at", "2014-07-28 18:30:31.287286"]]
+  [1m[35m (18.6ms)[0m  commit transaction
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 23ms (ActiveRecord: 19.4ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:30:31 +0000
+Processing by ApplicationController#index as HTML
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  Rendered application/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 18:30:31 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 129.105.10.175 at 2014-07-28 18:30:31 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 18:30:31 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 18:30:31 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 129.105.10.175 at 2014-07-28 18:30:31 +0000
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:31:55 +0000
+Processing by ApplicationController#index as HTML
+  [1m[35mAccount Load (0.3ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered application/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 18:31:55 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 18:31:55 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 129.105.10.175 at 2014-07-28 18:31:55 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 18:31:55 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 129.105.10.175 at 2014-07-28 18:31:55 +0000
+
+
+Started GET "/profile/19/edit" for 129.105.10.175 at 2014-07-28 18:32:01 +0000
+Processing by ApplicationController#edit as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mAccount Load (0.4ms)[0m  [1mSELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 19 LIMIT 1[0m
+  Rendered application/edit.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/update_profile/19?name=arda&url=fgadsjdgiask&caption=dsugkjfsdgossssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss&image=http%3A%2F%2Fwww.technotrigger.com%2Fwp-content%2Fuploads%2F2014%2F01%2Fhouse-in-green-field.jpg" for 129.105.10.175 at 2014-07-28 18:32:06 +0000
+Processing by ApplicationController#update as HTML
+  Parameters: {"name"=>"arda", "url"=>"fgadsjdgiask", "caption"=>"dsugkjfsdgossssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss", "image"=>"http://www.technotrigger.com/wp-content/uploads/2014/01/house-in-green-field.jpg", "id"=>"19"}
+  [1m[35mAccount Load (0.3ms)[0m  SELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 19 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "accounts" SET "caption" = ?, "updated_at" = ? WHERE "accounts"."id" = 19  [["caption", "dsugkjfsdgossssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss"], ["updated_at", "2014-07-28 18:32:06.676267"]]
+  [1m[36m (36.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 59ms (ActiveRecord: 36.7ms)
+
+
+Started GET "/update_profile/19?name=arda&url=fgadsjdgiask&caption=dsugkjfsdgossssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss&image=http%3A%2F%2Fwww.technotrigger.com%2Fwp-content%2Fuploads%2F2014%2F01%2Fhouse-in-green-field.jpg" for 129.105.10.175 at 2014-07-28 18:32:06 +0000
+Processing by ApplicationController#update as HTML
+  Parameters: {"name"=>"arda", "url"=>"fgadsjdgiask", "caption"=>"dsugkjfsdgossssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss", "image"=>"http://www.technotrigger.com/wp-content/uploads/2014/01/house-in-green-field.jpg", "id"=>"19"}
+  [1m[35mAccount Load (0.3ms)[0m  SELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = 19 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://rubyonrails-131022.use1.nitrousbox.com/profiles
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:32:06 +0000
+Processing by ApplicationController#index as HTML
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  Rendered application/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 18:32:06 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 129.105.10.175 at 2014-07-28 18:32:07 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 129.105.10.175 at 2014-07-28 18:32:07 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 18:32:07 +0000
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:32:38 +0000
+Processing by ApplicationController#index as HTML
+  [1m[35mAccount Load (0.3ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered application/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 18:32:38 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 129.105.10.175 at 2014-07-28 18:32:38 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 129.105.10.175 at 2014-07-28 18:32:38 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 18:32:38 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 18:32:38 +0000
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:34:16 +0000
+Processing by ApplicationController#index as HTML
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  Rendered application/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 129.105.10.175 at 2014-07-28 18:34:16 +0000
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 18:34:16 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 18:34:16 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 18:34:16 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 129.105.10.175 at 2014-07-28 18:34:16 +0000
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:35:19 +0000
+Processing by ApplicationController#index as HTML
+  [1m[35mAccount Load (0.3ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered application/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 18:35:19 +0000
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 18:35:19 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 18:35:19 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 129.105.10.175 at 2014-07-28 18:35:19 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 129.105.10.175 at 2014-07-28 18:35:19 +0000
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:36:15 +0000
+Processing by ApplicationController#index as HTML
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  Rendered application/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 18:36:15 +0000
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 18:36:15 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 129.105.10.175 at 2014-07-28 18:36:15 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 129.105.10.175 at 2014-07-28 18:36:15 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 18:36:15 +0000
+
+
+Started GET "/profiles" for 129.105.10.175 at 2014-07-28 18:36:27 +0000
+Processing by ApplicationController#index as HTML
+  [1m[35mAccount Load (0.3ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered application/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 18:36:27 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 129.105.10.175 at 2014-07-28 18:36:27 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 18:36:27 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 129.105.10.175 at 2014-07-28 18:36:27 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 18:36:27 +0000
+
+
+Started GET "/" for 129.105.10.175 at 2014-07-28 18:43:37 +0000
+Processing by ApplicationController#new as HTML
+  Rendered application/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 18:43:37 +0000
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 18:43:37 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 129.105.10.175 at 2014-07-28 18:43:37 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 129.105.10.175 at 2014-07-28 18:43:37 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 129.105.10.175 at 2014-07-28 18:43:37 +0000
+
+
+Started GET "/" for 129.105.10.175 at 2014-07-28 19:02:47 +0000
+Processing by ApplicationController#new as HTML
+  Rendered application/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 129.105.10.175 at 2014-07-28 19:02:47 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.105.10.175 at 2014-07-28 19:02:47 +0000
