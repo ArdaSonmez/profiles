@@ -26,14 +26,18 @@
   text-decoration: none;
 }
 *{
-  background-color: gold;
+  background-color: pink;
 }
 .a{
   width:250px;
-  height:250px;
+  height:300px;
 }
 .nameofprofile{
   color: blue;
   text-decoration: underline;
   text-transform: capitalize;
+}
+.b{
+  width:425px;
+  height:600px;
 }

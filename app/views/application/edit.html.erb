@@ -1,9 +1,6 @@
-<h2> <center>Edit Profile</center> </h2>
+<h2> <center>Edit Movie</center> </h2>
 <br><br><br>
-<form action=<%="/update_profile/#{@profile.id}" %>>
-  <input type="text" name="name"  value=<%= "#{@profile.name}" %>>
-  <input type="text" name="url" value=<%= "#{@profile.url}" %>>
-  <input type="text" name="caption" value=<%= "#{@profile.caption}" %>>
-  <input type="text" name="image" value=<%= "#{@profile.image}" %>>
+<form action=<%="/update_movie/#{@movie.id}" %>>
+  <input type="text" name="image" value=<%= "#{@movie.image}" %>>
   <input type="submit">
 </form>
